@@ -1,0 +1,26 @@
+import java.util.Scanner;
+import java.io.*;
+import java.lang.*;
+
+public class ravi{
+    
+    static void mains(){
+        char ch;
+        String s="";
+        Scanner x = new Scanner(System.in);
+        System.out.print("Enter your name     : ");
+        String a = x.nextLine();
+        
+        for(int i=0;i<a.length();i++){
+            
+            ch=a.charAt(i);
+            s=ch+s;
+        }
+        System.out.println("The reverse name is : "+s);
+    }
+    public static void main(String args[]) {
+        
+        mains();
+    }
+        
+}
